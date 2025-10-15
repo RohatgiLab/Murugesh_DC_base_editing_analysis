@@ -330,12 +330,12 @@ dc_abe_pred <- read_excel("ABE_fastq_files/predicted_mutation_categories/dc_abe_
 setnames(dc_abe_pred, old = "sg_rna_sequence", new = "gRNA")
 dc_abe_pred <- dc_abe_pred[, c(1, 3, 4)]
 
-## Merging predicted mutations with dc_cbe_zscores file:
+## Merging predicted mutations with dc_abe_zscores file:
 
 dc_abe_zscores_annotations <- left_join(dc_abe_zscores, dc_abe_pred, by = "gRNA")
 View(dc_abe_zscores_annotations)
 
-## Saving dc_cbe_zscores and dc_cbe_zscores_annotations:
+## Saving dc_abe_zscores and dc_abe_zscores_annotations:
 
 write.xlsx(dc_cbe_zscores, "ABE_fastq_files/Raw_read_counts/dc_abe_zscores.xlsx")
 write.xlsx(dc_cbe_zscores_annotations, "ABE_fastq_files/Raw_read_counts/dc_abe_zscores_annotations.xlsx")
