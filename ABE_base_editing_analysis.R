@@ -221,9 +221,9 @@ abe_reads_rpm <- read_excel("ABE_fastq_files/Raw_read_counts/ABE_reads_counts_rp
 names(abe_reads_rpm)
 
 abe_reads_rpm_avg <- abe_reads_rpm |> mutate(
-  abe_bot_rpm_avg = (abe_b1_rpm + abe_b1_rpm) / 2, 
+  abe_bot_rpm_avg = (abe_b1_rpm + abe_b2_rpm) / 2, 
   abe_top_rpm_avg = (abe_t1_rpm + abe_t2_rpm) / 2, 
-  abe_unsort_rpm_avg = (abe_u1_rpm + abe_u1_rpm) / 2
+  abe_unsort_rpm_avg = (abe_u1_rpm + abe_u2_rpm) / 2
 )
 
 write.xlsx(abe_reads_rpm_avg, "ABE_fastq_files/Raw_read_counts/ABE_reads_rpm_avg.xlsx")
