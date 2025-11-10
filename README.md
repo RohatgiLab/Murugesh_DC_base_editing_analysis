@@ -26,21 +26,20 @@ Together, these analyses provide a comprehensive view of how specific mutations 
    None required. The pipeline runs on standard personal computers or servers.
 
 #### Installation guide: Instructions
-A. Prerequisites
+1. Prerequisites
  R version 4.3.2 installed
  Internet access to install R packages
  RStudio for a user-friendly interface
-B. Install CRAN packages
-install.packages(c(
+2. Install CRAN packages
+   Install.packages(c(
   "dplyr", "tibble", "janitor", "readxl", "openxlsx",
-  "ggplot2", "ggpubr", "data.table", "stringr", "plotly"
-))
-C. Install Bioconductor packages:
-Install Bioconductor packages
-if (!requireNamespace("BiocManager", quietly = TRUE))
+  "ggplot2", "ggpubr", "data.table", "stringr", "plotly))
+3. Install Bioconductor packages:
+  Install Bioconductor packages
+ if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c(
+   BiocManager::install(c(
   "Biostrings", "GenomicAlignments", "GenomicFeatures",
   "Rsamtools", "QuasR", "ShortRead", "Rsubread"
 ))
