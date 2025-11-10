@@ -36,7 +36,7 @@ install.packages(c(
   "ggplot2", "ggpubr", "data.table", "stringr", "plotly"
 ))
 C. Install Bioconductor packages:
-# Install Bioconductor packages
+Install Bioconductor packages
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
