@@ -26,11 +26,11 @@ Together, these analyses provide a comprehensive view of how specific mutations 
    None required. The pipeline runs on standard personal computers or servers.
 
 #### Installation guide: Instructions
-1. Prerequisites
+1. Prerequisites:
  R version 4.3.2 installed
  Internet access to install R packages
  RStudio for a user-friendly interface
-2. Install CRAN packages
+2. Install CRAN packages:
    Install.packages(c(
   "dplyr", "tibble", "janitor", "readxl", "openxlsx",
   "ggplot2", "ggpubr", "data.table", "stringr", "plotly))
