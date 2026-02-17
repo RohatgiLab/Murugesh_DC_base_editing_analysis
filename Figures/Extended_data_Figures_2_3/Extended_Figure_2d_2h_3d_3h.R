@@ -13,7 +13,7 @@ library(ggrepel)
 
 # Protein_length vs z-score plots :
 
-dc_cbe <- read_excel("Screen_data_analysed_previously/dc_cbe_final_after_fixing_missed_intronic_guides.xlsx")
+dc_cbe <- read_excel("Screen_data_analysed_previously/dc_cbe_for_zscore_plots.xlsx")
 View(dc_cbe)
 dc_cbe <- dc_cbe |> mutate(
   predicted_mutations = as.character(predicted_mutations),
