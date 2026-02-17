@@ -11,7 +11,7 @@ library(tidyr)
 
 # Selected CTNNB1 guides were validated in two sets: set1 and set2: 
 
-ctnnb1_set1 <- read_excel("Subsampling_FACS_files/CTNNB1_Set1/ctnnb1_set1_hap1_appended.xlsx") |> data.table()
+ctnnb1_set1 <- read_excel("ctnnb1_set1_hap1_appended.xlsx") |> data.table()
 
 # hard coded 20 comes from sampling 20 mean values from the fluorescence data from hap1 validation:
 control_mean <- ctnnb1_set1$means_PE_A[ctnnb1_set1$sample == "CTNNB1_Set1_NTC1_ABE_WNT_treated"]
@@ -40,7 +40,7 @@ View(ctnnb1_set1)
 
 
 
-ctnnb1_set2 <- read_excel("Subsampling_FACS_files/CTNNB1_Set2/ctnnb1_se_wnt_set2_hap1_appended.xlsx") |> data.table()
+ctnnb1_set2 <- read_excel("ctnnb1_se_wnt_set2_hap1_appended.xlsx") |> data.table()
 ctnnb1_set2 <- ctnnb1_set2 |> mutate(
   stdev = se_PE_A * sqrt(20)
 )
