@@ -83,7 +83,7 @@ ctnnb1_for_plotting <- ctnnb1_for_plotting |>
 
 # merging dataset with validation data: 
 
-hap1_data_Ganesh <- read_excel("Subsampling_FACS_files/Supplementary_Table 2_Validation_Guides.xlsx", 
+hap1_data_Ganesh <- read_excel("Supplementary_Table 2_Validation_Guides.xlsx", 
                                sheet = "CTNNB1") |> select(1, 3, 6, 7) |> 
   rename(Screen = "Base_Editing_Screen", ids_hap1 = "guideRNA_identification_number", e_hap1_7s_validation_phenotype = "eHAP1-7S validation phenotype"  )
 
@@ -137,7 +137,7 @@ write.xlsx(ctnnb1_for_plotting, "Subsampling_FACS_files/ctnnb1_for_plotting.xlsx
 
 # Axin1 guides were also validated in two sets: set1 and set2:  
 
-axin1_set1 <- read_excel("Subsampling_FACS_files/AXIN1_Set1/axin1_set01_hap1_appended.xlsx") |> data.table()
+axin1_set1 <- read_excel("axin1_set01_hap1_appended.xlsx") |> data.table()
 axin1_set1 <- axin1_set1 |> 
   mutate(
     stdev = se_PE_A * sqrt(20)
@@ -171,7 +171,7 @@ axin1_set1 <- axin1_set1 |> select(-ids)
 
 View(axin1_set1)
 
-axin1_set2 <- read_excel("Subsampling_FACS_files/AXIN1_Set2/axin1_set02_hap1_appended.xlsx") |> data.table()
+axin1_set2 <- read_excel("axin1_set02_hap1_appended.xlsx") |> data.table()
 
 axin1_set2 <- axin1_set2 |> mutate(
   stdev = se_PE_A * sqrt(20)
@@ -221,7 +221,7 @@ axin1_for_plotting <- axin1_for_plotting |> filter(!str_detect(amino_acid_edits,
 
 
 
-hap1_data_Ganesh_axin1 <- read_excel("Subsampling_FACS_files/Supplementary_Table 2_Validation_Guides.xlsx", 
+hap1_data_Ganesh_axin1 <- read_excel("Supplementary_Table 2_Validation_Guides.xlsx", 
                                sheet = "AXIN1") |> select(1, 3, 6, 7) |> 
   rename(Screen = "Base_Editing_Screen", ids_hap1 = "guideRNA_identification_number", ehap1_7S_validation_phenotype = "eHAP1_7S_validation_phenotype")
 
