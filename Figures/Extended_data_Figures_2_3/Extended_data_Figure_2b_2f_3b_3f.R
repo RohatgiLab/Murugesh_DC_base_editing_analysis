@@ -13,7 +13,7 @@ library(ggrepel)
 
 # Protein_length vs z-score plots :
 
-dc_cbe <- read_excel("Z_score_vs_protein_length_plots/CBE_bot_zscore_plots/dc_cbe_for_zscore_plots.xlsx")
+dc_cbe <- read_excel("dc_cbe_for_zscore_plots.xlsx")
 
 # Function I used to categorize mutation_category: 
 
