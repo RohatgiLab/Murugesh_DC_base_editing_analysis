@@ -14,7 +14,7 @@ library(ggstatsplot)
 
 # DC_cbe library raw read counts
 
-dc_cbe_wnt <- read_excel("CBE_ABE_libraries_analysis_revist/dc_cbe_wnt_raw_countsavg_LFC.xlsx") |> data.table()
+dc_cbe_wnt <- read_excel("dc_cbe_wnt_raw_countsavg_LFC.xlsx") |> data.table()
 
 master_file_cbe <- read_excel("CBE_ABE_libraries_analysis_revist/Supplementary Table 1_Master File_All Guides.xlsx", 
                           sheet = "WNT_DC_CBE Screen") |> data.table()
@@ -135,7 +135,7 @@ write.xlsx(dc_cbe_rep_01_02, "CBE_ABE_libraries_analysis_revist/dc_cbe_rep_01_02
 
 # Analyzing DC_ABE_library_zscores of each replicates: 
 
-dc_abe_data <- read_excel("CBE_ABE_libraries_analysis_revist/ABE_library_DC/dc_abe_wnt_raw_counts_avg_LFC.xlsx.xlsx") |> data.table()
+dc_abe_data <- read_excel("dc_abe_wnt_raw_counts_avg_LFC.xlsx") |> data.table()
 
 dc_abe_rep_01 <- dc_abe_data |> select(ids, B_1, T_1, U_1)
 dc_abe_rep_02 <- dc_abe_data |> select(ids, B_2, T_2, U_2)
