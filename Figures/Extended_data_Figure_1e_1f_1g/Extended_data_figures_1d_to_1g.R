@@ -11,7 +11,7 @@ library(stringr)
 
 # Extended Data Figure 1e: 
 
-dc_abe_data <- read_excel("False_Negative_rate/dc_abe_for_z_score_plots.xlsx") |> data.table()
+dc_abe_data <- read_excel("dc_abe_for_z_score_plots.xlsx") |> data.table()
 
 ctnnb1_abe <- dc_abe_data |> filter(
   gene_names %in% c("CTNNB1", "control_abe")
