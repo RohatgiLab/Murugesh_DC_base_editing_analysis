@@ -1,4 +1,4 @@
-# False negative rate: Extended data Figure 1e, 
+# False negative rate: Extended data Figure 1d to 1g:
 library(readxl)
 library(ggridges)
 library(ggplot2)
