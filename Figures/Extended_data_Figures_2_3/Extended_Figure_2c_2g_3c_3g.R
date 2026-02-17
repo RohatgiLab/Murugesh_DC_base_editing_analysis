@@ -13,7 +13,7 @@ library(ggrepel)
 
 # Protein_length vs z-score plots :
 
-dc_abe <- read_excel("Z_score_vs_protein_length_plots/ABE_bot_zscore_plots/dc_abe_for_z_score_plots.xlsx")
+dc_abe <- read_excel("dc_abe_for_z_score_plots.xlsx")
 
 custom_colors <- c(
   "Missense" = "#5EB0B3",  
