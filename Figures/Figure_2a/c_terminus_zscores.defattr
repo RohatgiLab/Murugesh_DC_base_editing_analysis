@@ -1,0 +1,39 @@
+#  Amino acid hydrophobicity scale from
+#  "A simple method for displaying the hydropathic character of a protein. 
+#  Kyte J, Doolittle RF. J Mol Biol. 1982 May 5;157(1):105-32. 
+#
+#  More positive means more hydrophobic.
+#  The met value is also assigned to selenomethionine.
+#
+#  Use this file to assign the attribute in ChimeraX or Chimera.
+#
+attribute: c_terminus_zscores
+recipient: residues
+	/A:692	2.687001983
+	/A:698	2.217938552
+	/A:702	3.77470667
+	/A:704	3.77470667
+	/A:709	2.477869487
+	/A:711	2.477869487
+	/A:721	5.387059431
+	/A:725	2.29984023
+	/A:734	3.07379204
+	/A:735	3.07379204
+	/A:736	3.07379204
+	/A:738	4.398703806
+	/A:739	2.685002294
+	/A:750	3.2263447
+	/A:751	2.476624175
+	/A:752	2.476624175
+	/A:755	2.17979075
+	/A:760	2.182562579
+	/A:761	2.182562579
+	/A:762	2.751377987
+	/A:763	2.751377987
+	/A:764	3.695690162
+	/A:765	3.695690162
+	/A:766	2.345481365
+	/A:776	3.619809882
+	/A:778	2.128418829
+	/A:780	2.128418829
+	/A:781	2.503035184
