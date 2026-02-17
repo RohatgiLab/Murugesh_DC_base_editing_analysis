@@ -16,7 +16,7 @@ library(stringr)
 
 # Dataset used for making z-score plots:-
 
-dc_abe <- read_excel("Screen_data_analysed_previously/dc_abe_final_after_fixing_missed_intronic_guides.xlsx") |> data.table()
+dc_abe <- read_excel("dc_abe_for_z_score_plots.xlsx") |> data.table()
 dc_abe <- dc_abe |> mutate(
   predicted_mutations = as.character(predicted_mutations),
   residue_number = as.numeric(str_extract(predicted_mutations, "(?<=[A-Za-z])\\d+(?=[A-Za-z])"))
